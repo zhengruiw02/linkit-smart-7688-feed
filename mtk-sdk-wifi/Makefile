@@ -31,7 +31,7 @@ define Package/mtk-sdk-wifi
   SECTION:=ralink
   CATEGORY:=Ralink SDK
   TITLE:=MT7628/88 SDK Wifi
-  DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 +wireless-tools +libuci
+  DEPENDS:=@TARGET_ramips_mt76x8_DEVICE_mediatek_linkit-smart-7688 +wireless-tools +libuci
   ABI_VERSION:=$(PKG_RELEASE)
 endef
 

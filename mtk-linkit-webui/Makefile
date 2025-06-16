@@ -19,9 +19,11 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 include $(INCLUDE_DIR)/package.mk
 
 define Package/mtk-linkit-webui
+  SECTION:=ralink
+  CATEGORY:=Ralink SDK
   TITLE:=LinkIt Smart 7688 Webui
-  DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688
-  HIDDEN:=1
+  DEPENDS:=@TARGET_ramips_mt76x8_DEVICE_mediatek_linkit-smart-7688
+#   HIDDEN:=1
 endef
 
 define Build/Configure

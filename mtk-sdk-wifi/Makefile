@@ -8,11 +8,13 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=mtk-sdk-wifi
-PKG_VERSION:=2015-06-01
-PKG_RELEASE=$(PKG_SOURCE_VERSION)
+PKG_VERSION:=2015.06.01
+PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=http://git.openwrt.org/project/iwinfo.git
+# PKG_SOURCE_URL:=http://git.openwrt.org/project/iwinfo.git
+PKG_SOURCE_URL:=https://github.com/openwrt/iwinfo.git
+PKG_MIRROR_HASH:=f1c6e17c7f5b27f6cdec31056589a00ba19f3a34d1401d9e1dedd29d539f924d
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=ade8b1b299cbd5748db1acf80dd3e9f567938371
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
